@@ -1,0 +1,2 @@
+# CCG
+Color Code Generator
