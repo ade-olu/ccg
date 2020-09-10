@@ -1,4 +1,4 @@
-/*Font Link*/
+/*Google Fonts Link*/
 @import url("https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=|Montserrat:500,600,800|Major+Mono+Display|Bungee|Lexend+Exa|Lexend+Deca|Bungee+Shade&display=swap");
 #bodyId {
   font-size: 14px;
@@ -96,7 +96,7 @@
 #hex {
   width: 140px;
   height: 30px;
-  border: 1px solid #6305FA;
+  border: 1.5px solid #6305FA;
   border-radius: 30px;
   font-family: 'Lexend Exa', sans-serif !important;
   text-transform: uppercase;
@@ -106,7 +106,7 @@
 
 #copy1 {
   border-radius: 30px;
-  border: 1px solid #6305FA;
+  border: 1.5px solid #6305FA;
   color: #6305FA;
   font-size: 12px;
   text-transform: uppercase;
@@ -121,7 +121,7 @@
 #rgb {
   width: 140px;
   height: 30px;
-  border: 1px solid #6305FA;
+  border: 1.5px solid #6305FA;
   border-radius: 30px;
   font-family: 'Lexend Exa', sans-serif !important;
   margin-right: auto;
@@ -130,7 +130,7 @@
 
 #copy2 {
   border-radius: 30px;
-  border: 1px solid #6305FA;
+  border: 1.5px solid #6305FA;
   color: #6305FA;
   font-size: 12px;
   text-transform: uppercase;
