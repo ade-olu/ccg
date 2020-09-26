@@ -1,15 +1,18 @@
 /*Google Fonts Link*/
-@import url("https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=|Montserrat:500,600,800|Major+Mono+Display|Bungee|Lexend+Exa|Lexend+Deca|Bungee+Shade&display=swap");
-#bodyId {
+@import url('https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=|Montserrat:500,600,800|Major+Mono+Display|Bungee|Lexend+Exa|Lexend+Deca|Bungee+Shade&display=swap');
+$bColor: #e8e8e8;
+$color: #6305FA, #630AFF;
+$color2: #111;
+
+#bodyId{
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
-  background-color: #e8e8e8;
+  background-color: $bColor;
   overflow-x: hidden;
 }
 
-#navbarId {
-  background: -webkit-gradient(linear, right top, left top, from(#6305FA), to(#630AFF)) !important;
-  background: linear-gradient(to left, #6305FA, #630AFF) !important;
+#navbarId{
+  background: linear-gradient(to left, $color) !important;
 }
 
 .head {
@@ -17,66 +20,62 @@
   font-weight: 800;
   font-size: 20px;
   /*class="head" (Hover)*/
-}
-
-.head:hover {
-  opacity: 0.6;
-  -webkit-transition: 250ms opacity ease;
-  transition: 250ms opacity ease;
+  &:hover {
+    opacity: 0.6;
+    transition: 250ms opacity ease;
+  }
 }
 
 /*id="navId"*/
 #navId {
-  color: #e8e8e8;
+  color: $bColor;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 14px;
   text-transform: uppercase;
+
   /*id="navId" (Hover)*/
+  &:hover {
+    opacity: 0.6;
+    transition: 250ms opacity ease;
+  }
 }
 
-#navId:hover {
-  opacity: 0.6;
-  -webkit-transition: 250ms opacity ease;
-  transition: 250ms opacity ease;
-}
-
-#navBtn {
+#navBtn{
   border: none !important;
   outline: none !important;
   text-decoration: none !important;
 }
 
+
+//*Animated Nav Btn
 .bar1, .bar2, .bar3 {
   width: 30px;
   height: 2px;
-  background-color: #e8e8e8;
+  background-color: $bColor;
   margin: 6px 0;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-7px, 4px);
-  transform: rotate(-45deg) translate(-7px, 4px);
+  -webkit-transform: rotate(-45deg) translate(-7px, 4px) ;
+  transform: rotate(-45deg) translate(-7px, 4px) ;
 }
-
 .change .bar2 {
   opacity: 0;
 }
-
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-7px, -4px);
-  transform: rotate(45deg) translate(-7px, -4px);
+  -webkit-transform: rotate(45deg) translate(-7px, -4px) ;
+  transform: rotate(45deg) translate(-7px, -4px) ;
 }
 
+
 /*Navbar Links Spacing*/
-.navbar-nav > li {
+.navbar-nav > li{
   padding-left: 30px;
   padding-right: 30px;
 }
 
-#genHomeId {
+#genHomeId{
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
@@ -85,15 +84,15 @@
 #bgcolor {
   width: 400px;
   height: 150px;
-  border: 1.5px solid #111;
+  border: 1.5px solid $color2;
   border-radius: 20px;
-  background-color: black;
+  background-color:black;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
-#hex {
+#hex{
   width: 140px;
   height: 30px;
   border: 1.5px solid #6305FA;
@@ -104,21 +103,20 @@
   margin-left: auto;
 }
 
-#copy1 {
+#copy1{
   border-radius: 30px;
   border: 1.5px solid #6305FA;
   color: #6305FA;
   font-size: 12px;
-  text-transform: uppercase;
+text-transform: uppercase;
+  
+  &:hover{
+    background: linear-gradient(to left, $color) !important;
+  color: $bColor;
+}
 }
 
-#copy1:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#6305FA), to(#630AFF)) !important;
-  background: linear-gradient(to left, #6305FA, #630AFF) !important;
-  color: #e8e8e8;
-}
-
-#rgb {
+#rgb{
   width: 140px;
   height: 30px;
   border: 1.5px solid #6305FA;
@@ -128,39 +126,38 @@
   margin-left: auto;
 }
 
-#copy2 {
+#copy2{
   border-radius: 30px;
   border: 1.5px solid #6305FA;
   color: #6305FA;
   font-size: 12px;
   text-transform: uppercase;
+  
+  &:hover{
+    background: linear-gradient(to left, $color) !important;
+  color: $bColor;
 }
-
-#copy2:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#6305FA), to(#630AFF)) !important;
-  background: linear-gradient(to left, #6305FA, #630AFF) !important;
-  color: #e8e8e8;
 }
 
 /*Red*/
 #Red {
-  width: 200px;
+  width:200px;
 }
 
 /*Green*/
 #Green {
-  width: 200px;
+  width:200px;
 }
 
 /*Blue*/
 #Blue {
-  width: 200px;
+  width:200px;
 }
 
-.rangec {
+.rangec{
   height: 2px;
   border-radius: 2px;
-  background-color: #111;
+  background-color: $color2;
   -webkit-appearance: none;
   outline: none;
 }
@@ -171,7 +168,6 @@
   height: 16px;
   border-radius: 50%;
   background-color: #6305FA;
-  -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
 }
 
@@ -181,124 +177,140 @@
   -webkit-transform: scale(1.2);
 }
 
-#aboutId {
+#aboutId{
   margin-left: 10px;
   margin-right: 10px;
 }
 
-#aboutId h1 {
+#aboutId h1{
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 45px !important;
   text-transform: uppercase;
-  color: #111;
+  color: $color2;
+ 
 }
 
-#aboutId h6 {
+#aboutId h6{
   font-family: 'Montserrat', sans-serif;
   font-weight: 500 !important;
 }
 
-.brand {
-  width: 120px;
-  height: 120px;
-  display: inline !important;
+.brand{
+  width: 60px;
+  height: 60px;
   text-decoration: none !important;
 }
 
-#aId:hover {
-  color: #6305FA;
-  -webkit-transition: 250ms;
-  transition: 250ms;
+#aId {
+  &:hover {
+    color: #6305FA;
+    transition: 250ms;
+  }
 }
 
-footer a {
+footer {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+footer a{
   color: #212121;
-  font-size: 20px;
-  -webkit-transition: 250ms;
+  font-size: 24px;
   transition: 250ms;
 }
 
-footer a:hover {
+footer a:hover{
   color: #6305FA;
 }
 
 footer a + a {
-  padding-left: 2em;
+  padding-left: 2.5em;
 }
 
-h6 a {
-  color: #111;
+h6 a{
+  color: $color2;
   text-decoration: none !important;
 }
 
 /*Media Queries*/
-@media screen and (max-width: 1024px) {
-  #bgcolor {
+
+@media screen and (max-width: 1024px){
+  #bgcolor{
     margin-top: 25% !important;
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 575px){
+  
   /*Nav Bar Links Spacing*/
-  .navbar-nav > li {
+  .navbar-nav > li{
     padding-left: 0;
     padding-right: 0;
   }
-  #bgcolor {
+
+  #bgcolor{
     margin-top: 0 !important;
   }
-  #aboutId h1 {
-    color: #111;
+  #aboutId h1{
+    color: $color2;
     font-size: 38px !important;
   }
 }
 
-@media screen and (max-width: 500px) {
-  #aboutId {
+@media screen and (max-width: 575px){
+  #aboutId{
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
-  #genHomeId {
+  #genHomeId{
     font-size: 13px !important;
   }
-  .abt {
+  .abt{
     font-size: 28px !important;
   }
-  #aboutId h6 {
+  #aboutId h6{
     font-size: 14px !important;
   }
-  footer a {
-    font-size: 18px !important;
+  footer {
+    a{
+    font-size: 22px !important;
   }
-  #hex, #rgb {
-    height: 26px !important;
-  }
-  #copy1, #copy2 {
-    font-size: 11px !important;
+  a + a {
+    padding-left: 2em !important;
   }
 }
+  #hex, #rgb{
+    height: 26px !important;
+  }
+  #copy1, #copy2{
+    font-size: 11px !important;
+  }
 
-@media screen and (max-width: 450px) {
-  #bgcolor {
+}
+
+@media screen and (max-width: 450px){
+  #bgcolor{
     width: 320px;
   }
-  #aboutId h6 {
+  #aboutId h6{
     font-family: 'Montserrat', sans-serif;
   }
 }
 
-@media screen and (max-width: 400px) {
-  #bgcolor {
+@media screen and (max-width: 400px){
+  #bgcolor{
     width: 280px;
     height: 132px;
   }
+
 }
 
-@media screen and (max-width: 350px) {
-  #bgcolor {
+@media screen and (max-width: 350px){
+  #bgcolor{
     width: 250px;
     height: 120px;
   }
 }
-/*# sourceMappingURL=CCGstyle.css.map */
